@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hello World</string>
+    <string name="edit_msg">Enter Name Here</string>
+    <string name="button">Next</string>
+    <string name="rick_txt">Output of Name</string>
+    <string name="a">Hello!</string>
+    <string name="test_1">Test Page</string>
+    <string name="web">Web Test</string>
+    <string name="name">Name Test</string>
+    <string name="time">Time</string>
+</resources>
