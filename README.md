@@ -1,4 +1,4 @@
-# Android-
+# Android
 Don't mind this, it's just an Android app I'm developing while 'studying' Android Development.
 
 # 
