@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 
 public class dispayMsg extends AppCompatActivity {
+    private final String EXTRA_MESSAGE = "com.example.helloworld.MESSAGE";
     private final WebView myWebView = (WebView) findViewById(R.id.webview);
     private final TextView textView = findViewById(R.id.textView);
 
@@ -21,29 +22,24 @@ public class dispayMsg extends AppCompatActivity {
         setContentView(R.layout.activity_dispay_msg);
 
         Intent intent = getIntent();
-        String message = intent.getStringExtra(MainActivity.EXTRA_MESSAGE);
+        String message = intent.getStringExtra(this.EXTRA_MESSAGE);
 
         textView.setText(message);
 
-//strings
-        String chanakan = "ello chanakan, this is an if statement";
-        String error = "ERROR, You haven't entered anything yet";
-        String joel = "Hai joel, ini lagu favoritmu.";
-
         switch(message.toLowerCase()) {
             case "chanakan": {
-                textView.setText(chanakan);
+                textView.setText("ello chanakan, this is an if statement");
                 WebViewChanakan();
             } break;
             case "joel": {
-                textView.setText(joel);
+                textView.setText("Hai joel, ini lagu favoritmu.");
                 WebViewJoel();
             } break;
             case "sudo test": {
                 test();
             } break;
             default: {
-                textView.setText(error);
+                textView.setText("ERROR, You haven't entered anything yet");
             } break;
         }
 
