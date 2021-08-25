@@ -10,12 +10,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HelloWorld">
+        android:theme="@style/Theme.HelloWorld"
+        android:fullBackupContent="">
         <activity
-            android:name=".test"
-            android:exported="true" />
-        <activity
-            android:name=".dispayMsg"
+            android:name=".displayMsg"
             android:exported="true" />
         <activity
             android:name=".MainActivity"
