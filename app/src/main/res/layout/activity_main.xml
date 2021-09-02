@@ -16,7 +16,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="48dp"
         android:text="@string/edit_msg"
-        android:onClick="blankMsg"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -26,8 +25,8 @@
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
-        android:onClick="sendMsg"
         android:text="@string/button"
+        android:onClick="sendMsg"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="20sp"
